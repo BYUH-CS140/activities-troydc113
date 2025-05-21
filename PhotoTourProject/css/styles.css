@@ -1,0 +1,34 @@
+.list {
+    list-style-image: url('ph.png');
+    font-family:'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
+    color:whitesmoke;
+}
+
+body {
+    background-image: url('bg.jpeg');
+}
+
+main {
+    background-repeat: no-repeat;
+    background-image: url('halohalo.png');
+    background-position: right;
+}
+
+.titles {
+    color:#fff9c7;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bolder;
+}
+
+.text {
+    color:whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
+}
+
+nav a{
+    color:snow;
+}
+
+.current{
+    color:darkred;
+}
