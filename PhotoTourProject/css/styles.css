@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('bg.jpeg');
+    background-image: url('../images/sea.jpg');
 }
 
 main {
@@ -14,13 +14,13 @@ main {
     background-position: right;
 }
 
-.titles {
+h1 , h2 ,h3 {
     color:#fff9c7;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:bolder;
 }
 
-.text {
+p {
     color:whitesmoke;
     font-family:'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
 }
