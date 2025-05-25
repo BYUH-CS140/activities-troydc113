@@ -1,4 +1,4 @@
-.textbox {background-color: blanchedalmond;} 
+/*.textbox {background-color: blanchedalmond;} 
 
 h1 {font-size:50px; color: #462447; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 
@@ -8,4 +8,77 @@ h2 {font-size:80px; color: #462447; text-align: center; font-family: Cambria, Co
 
 .listheaders { font-size: 32px; font-weight: bolder; color:darkred; } 
 
-body {background-image: url('../bg.jpg');}
+body {background-image: url('../bg.jpg');}*/
+
+/*-------------------ACTIVITY_08-----------------------*/
+* { /* (universal) Whole document */
+  margin: 0; /* Reset margin to 0 */
+  padding: 0; /* Reset padding to 0 */
+  box-sizing: border-box; /* Set box-sizing to border-box */
+}
+
+/* Base Page Styling */
+body { /* Entire page background & default font */
+  font-family: "Segoe UI", Arial, sans-serif; /* Set font-family */
+  background-color: #f2f2f2; /* Set background-color */
+}
+
+/* Header Banner */
+
+/* Step 3: #page-header (ID) - <footer> element across the top */
+#page-header {
+  background-image: url("pattern-bg.png");
+  background-size: cover;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+/* Step 4: .title (class) - Heading text inside the header */
+.title {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
+
+/* Navigation Bar */
+
+/* Step 5: .nav-list (class) - The <ul> that contains your nav items */
+.nav-list {
+  list-style: none; /* Remove bullets */
+  display: flex; /* Use flexbox */
+  gap: 1rem; /* Add gap between items */
+}
+
+/* Step 6: .nav-list > li (parent > child) - Only the top-level <li> elements of the nav */
+.nav-list > li {
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* Step 7: .nav-list a (descendant) - All <a> links inside each nav item */
+.nav-list a {
+  text-decoration: none; /* Remove text decoration */
+  color: #ffffff; /* Set color */
+  font-size: 1rem;
+}
+
+/* Step 8: .nav-list a:hover (pseudo-class) - Nav links on hover */
+.nav-list a:hover {
+  color: #333333; /* Change link color */
+  background: #ffffff; /* Change background */
+}
+
+/* Resources List Section */
+
+/* Step 9: .resources (class) - The wrapper list (<ul> or <ol>) that you create */
+.resources {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 60%;
+}
+
+/* Step 10: .resources li (descendant) - Each individual item inside that resources list */
+.resources li {
+  margin-bottom: 0.5rem;
+}
