@@ -1,0 +1,11 @@
+.textbox {background-color: blanchedalmond;} 
+
+h1 {font-size:50px; color: #462447; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+h2 {font-size:80px; color: #462447; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+.lists {background-color:burlywood;}
+
+.listheaders { font-size: 32px; font-weight: bolder; color:darkred; } 
+
+body {background-image: url('../bg.jpg');}
