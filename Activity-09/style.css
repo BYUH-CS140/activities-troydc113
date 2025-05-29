@@ -1,0 +1,21 @@
+.navlist {
+    display:flex; gap:1rem;
+    list-style:none;
+    justify-content: space-around;
+}
+
+.navlist > li{
+    padding:0.75rem 0.75rem;
+    background-color:cornflowerblue;
+    border-radius: 5px;
+}
+
+.navlist > li:hover{
+    background-color: coral;
+    transition: background-color 0.5s;
+}
+
+.navlist a:hover{
+    color:yellow;
+    transition: color 0.3s;
+}
