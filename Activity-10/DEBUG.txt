@@ -1,0 +1,15 @@
+1. There was no dash on bagckground color inside body tag
+2. There was a mispell on font-family attribute
+3. There was a mispell on bagckground-color inside header
+4. There was a mispell on padding attribute.
+5. There was no unit in margin attribute inside main
+6. There was no hashtag on the id #garden.
+7. There was no unit on height attribute inside #garden 
+8. There was no dash on margin-top attribute in section
+9. There were two stylesheet links, one was a non-existing css file.
+10. There were two : on nav a:hover.
+
+Here is the prompt that I used to find these bugs:
+Microsoft Co-pilot: "There are 9 intentional bugs in this html and 
+css file that i will send you. I dont want you to fix them, 
+i just want you to FIND them. can you do that?"

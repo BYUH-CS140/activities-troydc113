@@ -1,0 +1,98 @@
+/**/
+
+body {
+  /*background color: forestgreen;*/
+  /*no dash*/
+  background-color: forestgreen;
+  margin: 0;
+  /*font-family: Gil Sans;*/
+  /*font mispell*/
+  font-family: Gill Sans;
+}
+
+header {
+  /*Typos*/
+  /*background-color: G0ld;*/
+  background-color: Gold;
+  color: #004d00;
+  text-align: center;
+  font-size: 2em;
+  /*paddding: 20px;*/
+  padding: 20px;
+  margin: 0;
+}
+
+.nav {
+  background-color: #2e1a1a;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  display: inline;
+  border-right: 1px solid grey;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: gold;
+  font-weight: bold;
+  padding: 14px 16px;
+}
+
+/*nav a::hover */
+nav a:hover {
+  background-color: gold;
+  color: #2e1a1a;
+}
+
+main {
+  background-color: lightgreen;
+  /*margin: 50px 100;*/
+  /*missing unit*/
+  margin: 50px 100px;
+  padding: 50px;
+}
+
+/*garden*/
+/*no hashtag. garden is id*/
+#garden {
+  border: 5px solid brown;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px grey;
+  /*height: 30;*/
+  /*no unit*/
+  height: 30px;
+  width: 30%;
+}
+
+section {
+  /*margintop: 30px;*/
+  /*should have dash*/
+  margin-top: 30px;
+}
+
+h2 {
+  color: brown;
+}
+
+footer {
+  background-color: #2e1a1a;
+  opacity: 0.9;
+  padding: 30px 50px;
+  color: gold;
+  text-align: center;
+}
