@@ -1,0 +1,125 @@
+header {
+    background-color: #f0f8ff;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid cornflowerblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+nav {
+    background-color: #e6f0ff; /* Light blue for contrast */
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.navlist {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    display:flex; 
+    gap:1rem;
+    list-style:none;
+    justify-content: space-around;
+}
+
+.navlist > li{
+    padding:0.75rem 0.75rem;
+    background-color:rgb(220, 160, 153);
+    border-radius: 5px;
+}
+
+.navlist > li:hover{
+    background-color: coral;
+    transition: background-color 0.5s;
+}
+
+.navlist a:hover{
+    color:yellow;
+    transition: color 0.3s;
+}
+
+
+
+
+
+.columncontainer{
+    display: flex;
+    gap: 30px; /* Space between columns */
+    margin-bottom: 40px;
+}
+
+.column{
+    flex: 1; /* Each column takes equal space */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.column h2 {
+    margin-top: 0;
+}
+
+.column p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.floatedimagesection{
+    overflow: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.floatedimage {
+    float: left;
+    width: 200px;           
+    height: 200px;         
+    object-fit: cover;      
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 5px;     
+}
+
+.floatedimagesection h2 h3{
+    margin-top: 0;
+}
+
+.floatedimagesection p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    margin: 0.5rem auto;
+    max-width: 600px;
+    font-size: 0.9rem;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b79f9f;
+    color: #333;
+}
+
+main {
+    padding: 1rem 2rem;
+}
