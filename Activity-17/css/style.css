@@ -1,0 +1,122 @@
+.feedback {
+  color: red;
+  display: none;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.valid-feedback {
+  color: green;
+  display: none;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+
+#registrationForm {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+
+#registrationForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#registrationForm input[type="text"],
+#registrationForm input[type="email"],
+#registrationForm input[type="password"],
+#registrationForm input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#registrationForm button[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #356293; /* Updated to your specified color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#registrationForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*mobile device*/
+@media (max-width: 600px) {
+    #registrationForm {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+/* Optional: Style for focus states */
+#registrationForm input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* --- Desktop View Styles --- */
+@media (min-width: 601px) { /* Applies when the screen width is 601px or more */
+    #registrationForm {
+        display: grid; /* Use CSS Grid for layout */
+        grid-template-columns: 120px 1fr; /* First column (label) fixed width, second column (input) takes remaining space */
+        gap: 15px 10px; /* Row gap and column gap */
+        padding: 25px; /* Slightly more padding for desktop */
+    }
+
+    #registrationForm label {
+        display: flex; /* Use flexbox to vertically align label text */
+        align-items: center; /* Center label text vertically with input */
+        justify-content: flex-end; /* Align label text to the right */
+        margin-bottom: 0; /* Remove default block margin */
+        padding-right: 10px; /* Space between label and input */
+        text-align: right; /* Ensure text is right-aligned */
+    }
+
+    #registrationForm input[type="text"],
+    #registrationForm input[type="email"],
+    #registrationForm input[type="password"],
+    #registrationForm input[type="tel"] {
+        margin-bottom: 0; /* Remove default block margin */
+    }
+
+    .feedback, .valid-feedback {
+        grid-column: 2; /* Make feedback messages appear under the input column */
+        margin-top: -10px; /* Pull it up a bit to be closer to the input */
+        margin-bottom: 5px; /* Space before next label/input group */
+        padding-left: 5px; /* Little padding for text alignment */
+    }
+
+    #registrationForm button[type="submit"] {
+        grid-column: span 2; /* Make the button span across both columns */
+        width: auto; /* Reset width from 100% to auto */
+        max-width: 200px; /* Give button a reasonable max-width */
+        justify-self: center; /* Center the button in the span 2 column area */
+        margin-top: 20px; /* Add more space above button */
+    }
+
+    #registrationFeedback {
+        grid-column: span 2; /* Make the feedback span across both columns */
+        text-align: center; /* Center the text */
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="registrationForm">
+        <fieldset>
+            <legend>User Registration</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required autocomplete="username" minlength="5">
+            <div class="feedback" id="usernameFeedback" aria-live="polite"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <div class="feedback" id="emailFeedback" aria-live="polite"></div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required autocomplete="new-password" minlength="8">
+            <div class="feedback" id="passwordFeedback" aria-live="polite"></div>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            <div class="feedback" id="phoneFeedback" aria-live="polite"></div>
+
+            <button type="submit">Register</button>
+            <div class="feedback valid-feedback" id="registrationFeedback" aria-live="polite"></div>
+        </fieldset>
+    </form>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
