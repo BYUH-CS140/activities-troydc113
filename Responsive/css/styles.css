@@ -1,22 +1,57 @@
-.list {
-    list-style-image: url('ph.png');
-    font-family:'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
-    color:whitesmoke;
+/* Mobile-first base styles */
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    background-image: url('../images/sea.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: whitesmoke;
 }
 
-/* NAVIGATION LINKS */
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.5);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;  /* vertical nav for mobiles */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 nav a {
     color: skyblue;
+    padding: 1rem;
     text-decoration: none;
+    border-bottom: 1px solid #333;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a#current {
+    color: gold;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: white;
-    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 239, 145);
 }
 
-/* LIST LINKS */
+main {
+    padding: 1rem;
+}
+
+/* Lists styling */
+.list {
+    list-style-image: url('ph.png');
+    padding-left: 1.2rem;
+}
+
 .list a {
     color: lightyellow;
     text-decoration: none;
@@ -27,35 +62,126 @@ nav a:hover {
     text-decoration: underline;
 }
 
-body {
-    background-image: url('../images/sea.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;           /* makes the image fill the screen */
-    background-position: center;      /* keeps the image centered */
-    background-attachment: fixed;     /* optional: keeps background still when scrolling */
+/* Headings */
+h1, h2, h3 {
+    color: #fff9c7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    margin-top: 0;
 }
 
-main {
-    background-repeat: no-repeat;
-    background-image: url('halohalo.png');
-    background-position: right;
+img {
+    width: 100%;           /* fill the container’s width */
+    max-width: 300px;      /* limit max size */
+    height: auto;          /* maintain aspect ratio */
+    display: block;        /* removes small gaps below images */
+    margin: 0 auto;        /* center images horizontally */
+    object-fit: cover;     /* crop to fill container without distortion */
+    border-radius: 8px;    /* optional rounded corners */
 }
 
-h1 , h2 ,h3 {
-    color:#fff9c7;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight:bolder;
+.image-container {
+    width: 300px;
+    height: 200px;  /* fixed height */
+    overflow: hidden;
 }
 
-p {
-    color:whitesmoke;
-    font-family:'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
+/* Tablets: screens 768px and wider */
+@media (min-width: 768px){
+    body {
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+    }
+
+    nav {
+        width: 220px;               /* a bit wider for tablets */
+        flex-shrink: 0;
+        height: auto;
+        border-right: 1px solid #444;
+        background-color: rgba(0,0,0,0.75);
+        padding-top: 1rem;
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        flex-direction: column;     /* vertical nav */
+    }
+
+    main {
+        flex-grow: 1;
+        padding: 2rem;
+        background-color: rgba(0,0,0,0.4);
+        color: whitesmoke;
+    }
+
+    footer {
+        grid-column: 1 / -1; /* stretch footer across layout */
+        text-align: center;
+        padding: 1rem;
+    }
 }
 
-nav a{
-    color:snow;
-}
 
-.current{
-    color:darkred;
+
+
+
+/* Desktops: screens 1024px*/
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0 auto;
+        max-width: 1200px;  /* constrain max width */
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    nav {
+        display: flex;                  /* horizontal nav */
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.8);
+        border: none;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    nav a {
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-right: 1px solid #444;
+        font-weight: bold;
+        color: skyblue;
+    }
+
+    nav a:last-child {
+        border-right: none;  /* no border on last link */
+    }
+
+    nav a#current {
+        color: darkred;
+        text-decoration: underline;
+    }
+
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: gold;
+    }
+
+    main {
+        flex-grow: 1;
+        padding: 3rem 2rem;
+        background-color: rgba(0,0,0,0.3);
+        color: whitesmoke;
+        max-width: 1000px;
+        margin: 1rem auto;
+    }
+
+    footer {
+        padding: 1rem;
+        background-color: rgba(0,0,0,0.6);
+        color: whitesmoke;
+        text-align: center;
+        margin-top: auto;
+    }
 }
