@@ -121,3 +121,42 @@ footer {
 .message-box button:hover {
   background-color: #372655;
 }
+
+/* Photo Card */
+.photocard {
+  background-color: #ffffff;
+  border: 1px solid #d4c2e4; /* soft purple border */
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(75, 0, 130, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photocard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(75, 0, 130, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;            /* Makes it a perfect square */
+  object-fit: cover;              /* Crops without stretching */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #4c3473;
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #6b5a91;
+  font-style: italic;
+}

@@ -35,7 +35,7 @@
 
             <div class="message-box">
                 <h3>Suggest a Fragrance, or send me a message!</h3>
-                <form action="#" method="post">
+                <form onsubmit="return sendEmail();">
                     <textarea name="suggestion" rows="5" placeholder="Type your message here..."></textarea>
                     <br>
                     <button type="submit">Send Message</button>
@@ -51,5 +51,7 @@
         <br>
         <p>&copy; 2024 Troy De la Cruz</p>
     </footer>
+
+    <script src="java.js"></script>
 </body>
 </html>
