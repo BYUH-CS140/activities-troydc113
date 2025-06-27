@@ -167,3 +167,30 @@ footer {
   color: #6b5a91;
   font-style: italic;
 }
+
+
+/* Perfume finder */
+.perfume-finder {
+  background-color: #f9f2ff;
+  border: 1px solid #d9c6f4;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.note-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.note-options label {
+  background: #e6ddf7;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#results {
+  margin-top: 1rem;
+}

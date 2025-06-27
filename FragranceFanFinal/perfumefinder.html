@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titles">FragranceFan</h1>
+    </header>
+
+    <nav>
+        <a href="index.html" >Home</a>
+        <a href="perfumes.html">Perfumes</a>
+        <a href="#" id="current">Perfume Finder</a>
+        <a href="about.html">About</a>
+    </nav>
+    
+    <main>
+        <section class="perfume-finder">
+            <h2>Perfume Finder by Notes</h2>
+            <p>Select one or more notes to find matching perfumes:</p>
+
+            <div class="note-options">
+                <!-- Top Notes -->
+                <label><input type="checkbox" value="salt"> Salt</label>
+                <label><input type="checkbox" value="lemon"> Lemon</label>
+                <label><input type="checkbox" value="cognac"> Cognac</label>
+                <label><input type="checkbox" value="mandarine"> Mandarine</label>
+                <label><input type="checkbox" value="ginger"> Ginger</label>
+                <label><input type="checkbox" value="mango"> Mango</label>
+                <label><input type="checkbox" value="cardamom"> Cardamom</label>
+                <label><input type="checkbox" value="tangerine"> Tangerine</label>
+                <label><input type="checkbox" value="bergamot"> Bergamot</label>
+
+                <!-- Middle Notes -->
+                <label><input type="checkbox" value="davana"> Davana</label>
+                <label><input type="checkbox" value="iris"> Iris</label>
+                <label><input type="checkbox" value="cinnamon"> Cinnamon</label>
+                <label><input type="checkbox" value="tonka bean"> Tonka Bean</label>
+                <label><input type="checkbox" value="oak"> Oak</label>
+                <label><input type="checkbox" value="hedione"> Hedione</label>
+                <label><input type="checkbox" value="jasmine"> Jasmine</label>
+                <label><input type="checkbox" value="coumarin"> Coumarin</label>
+                <label><input type="checkbox" value="woody notes"> Woody Notes</label>
+                <label><input type="checkbox" value="lavender"> Lavender</label>
+                <label><input type="checkbox" value="violet leaf"> Violet Leaf</label>
+                <label><input type="checkbox" value="sage"> Sage</label>
+                <label><input type="checkbox" value="peony"> Peony</label>
+
+                <!-- Base Notes -->
+                <label><input type="checkbox" value="ambergris"> Ambergris</label>
+                <label><input type="checkbox" value="oakmoss"> Oakmoss</label>
+                <label><input type="checkbox" value="sandalwood"> Sandalwood</label>
+                <label><input type="checkbox" value="vanilla"> Vanilla</label>
+                <label><input type="checkbox" value="praline"> Praline</label>
+                <label><input type="checkbox" value="candied almond"> Candied Almond</label>
+                <label><input type="checkbox" value="musk"> Musk</label>
+                <label><input type="checkbox" value="oud"> Oud</label>
+                <label><input type="checkbox" value="amber"> Amber</label>
+                <label><input type="checkbox" value="cypriol oil"> Cypriol Oil</label>
+                <label><input type="checkbox" value="benzoin"> Benzoin</label>
+                <label><input type="checkbox" value="cedar"> Cedar</label>
+                <label><input type="checkbox" value="patchouli"> Patchouli</label>
+            </div>
+
+            <button onclick="findPerfumes()">Find Match</button>
+
+            <div id="results"></div>
+        </section>
+    </main>
+
+
+    <footer>
+        <hr>
+        <br>
+        <p>&copy; 2024 Troy De la Cruz</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
